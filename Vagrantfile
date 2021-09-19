@@ -1,6 +1,6 @@
 $script = <<-SCRIPT
 echo "I am provisioning..."
-sudo yum install git curl vim wget -y
+sudo yum install git curl vim wget bash-completion -y
 git clone https://github.com/singularis/ckad.git
 cd ckad
 chmod +x kube-setup.sh
