@@ -8,7 +8,7 @@ sudo ./kube-setup.sh
 SCRIPT
 
 Vagrant.configure("2") do |config|
-	config.vm.network "private_network", ip: "192.168.50.5"
+	config.vm.network "private_network", ip: "192.168.56.1"
 	config.vm.provision "shell", inline: $script
 	config.vm.define "k8s-box" do |k8s|
 		k8s.vm.hostname = "k"
